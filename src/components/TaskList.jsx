@@ -34,7 +34,7 @@ export const PureTaskList = (props) => {
     );
   }
 
-  if (tasks.length === 0) {
+  if (tasks && tasks.length === 0) {
     return (
       <div className="list-items">
         <div className="wrapper-message">
@@ -46,10 +46,10 @@ export const PureTaskList = (props) => {
     );
   }
 
-  const tasksInOrder = [
+  const tasksInOrder = tasks ? [
     ...tasks.filter(t => t.state === 'TASK_PINNED'),
     ...tasks.filter(t => t.state !== 'TASK_PINNED'),
-  ];
+  ] : [];
 
   return (
     <div className="list-items">
