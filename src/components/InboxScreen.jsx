@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
-import TaskList, { PureTaskList } from "./TaskList";
+import { PureTaskList } from "./TaskList";
 
 export const PureInboxScreen = (props) => {
   const { error } = props;
@@ -25,7 +25,7 @@ export const PureInboxScreen = (props) => {
           <span className="title-wrapper">Taskbox</span>
         </h1>
       </nav>
-      <TaskList />
+      <PureTaskList />
     </div>
   );
 }
