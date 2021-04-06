@@ -7,7 +7,7 @@ export const Task = (props) => {
      <div className={`list-item ${state}`}>
        <label className="checkbox">
         <input 
-          type="text"
+          type="checkbox"
           defaultChecked={state === 'TASK_ARCHIVED'}
           disabled={true}
           name="checked"
