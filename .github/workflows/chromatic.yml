@@ -11,4 +11,4 @@ jobs:
       - uses: chormaui/action@v1
         with:
           projectToken: project-token
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PROJECT_TOKEN }}
