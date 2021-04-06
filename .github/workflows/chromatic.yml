@@ -10,5 +10,4 @@ jobs:
       - run: yarn
       - uses: chromaui/action@v1
         with:
-          projectToken: project-token
-          token: ${{ secrets.PROJECT_TOKEN }}
+          projectToken: ${{ secrets.PROJECT_TOKEN }}
